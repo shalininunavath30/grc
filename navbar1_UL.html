@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Navbar UL</title>
+    <link rel="stylesheet" href="navbar1_UL.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    
+  </head>
+  <body>
+    <!-- topbar -->
+    <div class="menu-bar">
+        <div ><img src="https://qph.cf2.quoracdn.net/main-qimg-59031a95c6543b62330bc221730d3f01-lq" alt="logo" class="logo"></div>
+        <div class="head">GRC</div>
+        <div class="cp">User Login</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house house"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-triangle-exclamation"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i><i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">log In</a></li>
+                    <li><a href="#">My Account</a></li>
+  
+                  </ul>
+                </div>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar -->
+    <div class="btn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-filter " viewBox="0 0 16 16" >
+        <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+      </svg>
+      <!-- <span class="fa-solid fa-caret-right"></span> -->
+    </div>
+    <nav class="sidebar">
+      <!-- <div class="text">GRC</div> -->
+      <ul>
+        <li>
+          <a href="#" class="act-btn">Dashboard</a>
+        </li>
+        <li>
+            <!-- <a  class="fas fa-caret-down first"><span href="#" class="feat-btn">Features</span> </a> -->
+          <a href="#" class="gover-btn">Governance
+            <span class="fa-solid fa-angle-right first"></span>
+          </a>
+          <ul class="gover-show">
+            <li><a href="#" class="gover1-btn">Cyber Security
+                <span class="fa-solid fa-angle-right first1"></span>
+            </a>
+            <ul class="gover1-show">
+                <li><a href="#">ISO 27k</a></li>
+                <li><a href="#">ISO 31k</a></li>
+                <li><a href="#">Aramco</a></li>
+                <li><a href="#">SAMA CSF</a></li>
+                <li><a href="#">NCA ECC</a></li>
+                <li><a href="#">CITC</a></li>
+                <li><a href="#">CTI</a></li>
+                <li><a href="#">PCI DSS</a></li>
+              </ul>
+            </li>
+            <li><a href="#" class="gover2-btn">Business Continuity
+                <span class="fa-solid fa-angle-right first2"></span>
+            </a>
+            <ul class="gover2-show">
+                <li><a href="#">22301</a></li>
+                <li><a href="#">SAMA BCM</a></li>
+            </ul>    
+            </li>
+            <li><a href="#" class="gover3-btn">Quality
+                <span class="fa-solid fa-angle-right first3"></span>
+            </a>
+            <ul class="gover3-show">
+                <li><a href="#">ISO9000</a></li>
+            </ul>    
+            </li>
+            <li><a href="#" class="gover4-btn">Health & safety
+                <span class="fa-solid fa-angle-right first4"></span>
+            </a>
+            <ul class="gover4-show">
+                <li><a href="#">ISO 14k</a></li>
+            </ul>    
+            </li>
+            <li><a href="#" class="gover5-btn">Privacy
+                <span class="fa-solid fa-angle-right first5"></span>
+            </a>
+            <ul class="gover5-show">
+                <li><a href="#">ISO 27701</a></li>
+                <li><a href="#">ISO 18001</a></li>
+            </ul>    
+            </li>
+            <li><a href="#" class="gover6-btn">Cloud
+                <span class="fa-solid fa-angle-right first6"></span>
+            </a>
+            <ul class="gover6-show">
+                <li><a href="#">ISO 17001</a></li>
+                <li><a href="#">ISO CSTAR</a></li>
+            </ul>    
+            </li>
+            <li><a href="#" class="gover7-btn">Data</span></a>   
+            </li>
+        </ul>
+        </li>
+        <li>
+            <a href="#" class="act-btn">Activity Management</a>
+        </li>
+        <li>
+            <a href="#" class="help-btn">Help Content
+                <span class="fa-solid fa-angle-right fifth"></span>
+            </a>
+            <ul class="help-show">
+                <li><a href="#">Help Topics</a></li>
+                <li><a href="#">Ticketing</a></li>
+            </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+    $('.btn').click(function(){
+      $(this).toggleClass("click");
+      $('.sidebar').toggleClass("show");
+      $('.bi-filter').toggleClass("rotate");
+      // $('.bi-filter').toggleClass("move");
+    });
+      $('.gover-btn').click(function(){
+        $('nav ul .gover-show').toggleClass("show");
+        $('nav ul .first').toggleClass("rotate");
+      });
+
+
+      $('.gover1-btn').click(function(){
+        $('nav ul .gover1-show').toggleClass("show11");
+        $('nav ul .first1').toggleClass("rotate");
+      });
+      $('.gover2-btn').click(function(){
+        $('nav ul .gover2-show').toggleClass("show12");
+        $('nav ul .first2').toggleClass("rotate");
+      });
+      $('.gover3-btn').click(function(){
+        $('nav ul .gover3-show').toggleClass("show13");
+        $('nav ul .first3').toggleClass("rotate");
+      });
+      $('.gover4-btn').click(function(){
+        $('nav ul .gover4-show').toggleClass("show14");
+        $('nav ul .first4').toggleClass("rotate");
+      });
+      $('.gover5-btn').click(function(){
+        $('nav ul .gover5-show').toggleClass("show15");
+        $('nav ul .first5').toggleClass("rotate");
+      });
+      $('.gover6-btn').click(function(){
+        $('nav ul .gover6-show').toggleClass("show16");
+        $('nav ul .first6').toggleClass("rotate");
+      });
+
+
+      $('.help-btn').click(function(){
+        $('nav ul .help-show').toggleClass("show4");
+        $('nav ul .fifth').toggleClass("rotate");
+      });
+      $('nav ul li').click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
+
+  </body>
+</html>

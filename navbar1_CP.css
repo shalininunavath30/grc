@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* topnavbar */
+  .head{
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    margin-left: 20px;
+    top: -1px;
+  }
+  .cp{
+    color: white;
+    top: 50px;
+    position: absolute;
+    margin-left: 27px;
+    font-size: 15px;
+  }
+  .logo {
+    position:absolute;
+    top: 0;
+    margin-top: 5px;
+    left: 10px;
+    height: 70px; 
+    width: auto;
+    border-radius: 40px;
+}
+
+  .menu-bar {
+    background-color: #014025;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    float: left;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+    position: relative;
+  }
+ 
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+  } 
+  .house{
+    margin-left: 1000px;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: orangered;
+  }
+  
+  .fas {
+    /* float: right; */
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  .fa-house {
+    margin-right: 10px;
+  }
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #014025;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  
+  
+
+
+/* sidenavbar */
+.btn{
+  position: absolute;
+  top: 65px;
+  left: -15px;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: left 0.4s ease;
+  transform: rotate(-230deg);
+  /* height: 50px;
+  font-weight: bold; */
+}
+.btn.click{
+  left: 247px;
+  z-index: 1;
+  top: 65px;
+}
+.btn span{
+  color: black;
+  font-size: 28px;
+  line-height: 45px;
+}
+/* .btn.click span:before{
+  content: '\f00d';
+  margin-right: -30px;
+} */
+.rotate {
+    transform: rotate(105deg);
+  } 
+  
+  /* .bi-filter{
+    font-size:60px; 
+    font-weight: bold;
+  } */
+  .move {
+    position: absolute;
+    right: 55px; 
+    z-index: 1;
+    top: -70px;
+  }
+  
+.sidebar{
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  left: -350px;
+  background: white;
+  transition: left 0.4s ease;
+  /* border-style:solid ; */
+  box-shadow: 0px 0.2px 0px 0.2px black;
+  top: 91px;
+  overflow-y: auto; /*scrollable */
+}
+::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+.sidebar.show{
+  left: 0px;
+}
+/* .sidebar .text{
+  color: black;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: white;
+  letter-spacing: 1px;
+} */
+nav ul{
+  background: white;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+nav ul li{
+  line-height: 60px;
+  border-top: 1px solid white;
+}
+nav ul li:last-child{
+  border-bottom: 1px solid white;
+}
+nav ul li a{
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 32px;
+  font-weight: 600;
+  display: block;
+  width: 100%;
+  /* border-left: 3px solid transparent;  */
+  margin-top: -12px;
+}
+nav ul li.active a{
+  color: black;
+  background: white;
+  border-left-color: white;
+}
+nav ul li a:hover{
+  color: blue;
+  background: skyblue;
+}
+nav ul ul{
+  position: static;
+  display: none;
+}
+nav ul .masters-show.show2{
+    display: block;
+  }
+nav ul .gover-show.show{
+  display: block;
+}
+
+nav ul .gover1-show.show11{
+    display: block;
+}
+nav ul .gover2-show.show12{
+    display: block;
+}
+nav ul .gover3-show.show13{
+    display: block;
+}
+nav ul .gover4-show.show14{
+    display: block;
+}
+nav ul .gover5-show.show15{
+    display: block;
+}
+nav ul .gover6-show.show16{
+    display: block;
+}
+nav ul .confi-show.show3{
+    display: block;
+}
+nav ul .help-show.show4{
+    display: block;
+}
+nav ul .mod-show.show5{
+    display: block;
+}
+nav ul .repo-show.show5{
+  display: block;
+}
+nav ul ul li{
+  line-height: 42px;
+  border-top: none;
+}
+nav ul ul li a{
+  font-size: 17px;
+  color: black;
+  padding-left: 65px;
+  font-weight: 500;
+}
+nav ul li.active ul li a{
+  color: black;
+  background: white;
+  border-left-color: transparent;
+}
+nav ul ul li a:hover{
+  /* color: rgb(255, 77, 0)!important; */
+  text-decoration: underline;
+  background: white!important;
+}
+nav ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 260px;
+  transform: translateY(-50%);
+  font-size: 19px;
+  transition: transform 0.4s;
+}
+nav ul li a span.rotate{
+  transform: translateY(-50%) rotate(90deg);
+}
+nav ul ul li a span{
+  position: absolute;
+  top: 50%;
+  right: 225px;
+  transform: translateY(-50%);
+  font-size: 17px;
+  transition: transform 0.4s;
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  z-index: -1;
+  text-align: center;
+}
+.content .header{
+  font-size: 45px;
+  font-weight: 600;
+}
+.content p{
+  font-size: 30px;
+  font-weight: 500;
+} 
+nav ul ul ul li a{
+    font-size: 17px;
+    color: black;
+    padding-left: 100px;
+  }
+  nav ul li ul li ul li.active a{
+    color: black;
+    background: white;
+    border-left-color: transparent;
+  }
+  nav ul ul ul li a:hover{
+    /* color: cyan!important; */
+    background: white!important;
+  }
+  

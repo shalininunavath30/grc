@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 3</title>
+    <link rel="stylesheet" href="act_manag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- topbar -->
+    <div class="menu-bar">
+        <div ><img src="https://qph.cf2.quoracdn.net/main-qimg-59031a95c6543b62330bc221730d3f01-lq" alt="logo" class="logo"></div>
+        <div class="head1">GRC</div>
+        <div class="cp">Client Portal</div>
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house house"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-triangle-exclamation"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-user"></i><i class="fas fa-caret-down"></i></a>
+  
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">log In</a></li>
+                    <li><a href="#">My Account</a></li>
+  
+                  </ul>
+                </div>
+          </li>
+        </ul>
+      </div>
+      <!-- sidebar -->
+    
+    <nav class="sidebar">
+        <ul>
+          <!-- <li>
+            <a href="#" class="act-btn">Dashboard</a>
+          </li> -->
+          <li>
+            <a href="#" class="gover-btn">Governance
+              <span class="fa-solid fa-angle-right first"></span>
+            </a>
+            <ul class="gover-show">
+              <li><a href="#" class="gover1-btn">Cyber Security
+                  <span class="fa-solid fa-angle-right first1"></span>
+              </a>
+              <ul class="gover1-show">
+                  <li><a href="#">ISO 27k</a></li>
+                  <li><a href="#">ISO 31k</a></li>
+                  <li><a href="#">Aramco</a></li>
+                  <li><a href="#">SAMA CSF</a></li>
+                  <li><a href="#">NCA ECC</a></li>
+                  <li><a href="#">CITC</a></li>
+                  <li><a href="#">CTI</a></li>
+                  <li><a href="#">PCI DSS</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="gover2-btn">Business Continuity
+                  <span class="fa-solid fa-angle-right first2"></span>
+              </a>
+              <ul class="gover2-show">
+                  <li><a href="#">22301</a></li>
+                  <li><a href="#">SAMA BCM</a></li>
+              </ul>    
+              </li>
+              <li><a href="#" class="gover3-btn">Quality
+                  <span class="fa-solid fa-angle-right first3"></span>
+              </a>
+              <ul class="gover3-show">
+                  <li><a href="#">ISO9000</a></li>
+              </ul>    
+              </li>
+              <li><a href="#" class="gover4-btn">Health & safety
+                  <span class="fa-solid fa-angle-right first4"></span>
+              </a>
+              <ul class="gover4-show">
+                  <li><a href="#">ISO 14k</a></li>
+              </ul>    
+              </li>
+              <li><a href="#" class="gover5-btn">Privacy
+                  <span class="fa-solid fa-angle-right first5"></span>
+              </a>
+              <ul class="gover5-show">
+                  <li><a href="#">ISO 27701</a></li>
+                  <li><a href="#">ISO 18001</a></li>
+              </ul>    
+              </li>
+              <li><a href="#" class="gover6-btn">Cloud
+                  <span class="fa-solid fa-angle-right first6"></span>
+              </a>
+              <ul class="gover6-show">
+                  <li><a href="#">ISO 17001</a></li>
+                  <li><a href="#">ISO CSTAR</a></li>
+              </ul>    
+              </li>
+              <li><a href="#" class="gover7-btn">Data</span></a>   
+              </li>
+          </ul>
+          </li>
+          <li>
+              <a href="#" class="masters-btn">Masters
+                <span class="fa-solid fa-angle-right third"></span>
+              </a>
+              <ul class="masters-show">
+                <li><a href="#">Roles</a></li>
+                <li><a href="#">Users</a></li>
+                <li><a href="#" id="arrow">Activities</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="act-btn">Activity Management</a>
+          </li>
+          
+          <li>
+              <a href="#" class="mod-btn">Modules
+                  <span class="fa-solid fa-angle-right sixth"></span>
+                </a>
+                <ul class="mod-show">
+                  <li><a href="#">Asset Management</a></li>
+                  <li><a href="#">Risk Management</a></li>
+                  <li><a href="#">Business Impact Analysis</a></li>
+                  <li><a href="#">Metrics</a></li>
+                  <li><a href="#">KRI & KPI</a></li>
+                </ul> 
+          </li>
+          <li>
+            <a href="#" class="repo-btn">Reports
+                <span class="fa-solid fa-angle-right sixth"></span>
+              </a>
+              <ul class="repo-show">
+                <li><a href="#">Dashboards</a></li>
+                <li><a href="#">Status Reports</a></li>
+                <li><a href="#">UserReports</a></li>
+                <li><a href="#">Gap Report</a></li>
+                <li><a href="#">Internal Audit Report</a></li>
+              </ul> 
+        </li>
+        <li>
+          <a href="#" class="confi-btn">Configuration
+            <span class="fa-solid fa-angle-right second"></span>
+          </a>
+          <ul class="confi-show">
+            <li><a href="#">Intial Setup</a></li>
+            <li><a href="#">Compliance periods</a></li>
+          </ul>
+        </li>
+        <li>
+            <a href="#" class="help-btn">Help
+                <span class="fa-solid fa-angle-right fifth"></span>
+            </a>
+            <ul class="help-show">
+                <li><a href="#">Help Topics</a></li>
+                <li><a href="#">Ticketing</a></li>
+            </ul>
+        </li>
+        </ul>
+      </nav>
+      <!-- activity Mangement-->
+    <div class="info-container">
+        <fieldset class="box1">
+            <div class="mainhead">
+                Home / <span class="mainhead1">Activity Management</span>
+            </div> 
+            <div class="head">Activity Management</div>
+            <div class="button">
+                <button class="toggleButton" id="toggleButton"><i class="fa-solid fa-plus"></i> Add New Activity</button>
+            </div>
+            <div class="search-container">
+                <select id="category" class="category-select">
+                <option value="all">All</option>
+                <option value="electronics">One</option>
+                <option value="fashion">Two</option>
+                </select>
+                <input type="search" id="search" class="search" name="search" placeholder="Search here">
+                <i class="fa fa-search"></i>
+            </div>
+        </fieldset>
+        <fieldset class="box4"></fieldset>
+        <fieldset class="box2">
+            <div class="container">
+                <div class="headd">Activity Management Table</div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Activity Name</th>
+                                <th>Activity Description</th>
+                                <th>Doer Comments</th>
+                                <th>Start Date</th>
+                                <th>End date</th>
+                                <th>Evidence Document</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="" class="more">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>002</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="" class="more">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>003</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="" class="more">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>004</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td><a href="" class="more">Edit</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </fieldset>
+        <!-- <fieldset class="box5"></fieldset> -->
+        <fieldset class="box3">
+            <div class="Form">
+                <div class="headdd">New Activity</div><hr class="line">
+                <div class="row" >
+                    <div class="col" >
+                        <div class="group">
+                            <label for="ActivityName" style="margin-top: 10px;">Activity Name :</label>
+                            <input type="text" name="Name" class="text" id="ActivityName" placeholder="Activity Name" style="margin-top: 10px;">
+                        </div>
+                        <div class="group">
+                            <label for="ActivityDescription" >Activity Description :</label>
+                            <input type="text" name="Description" class="text" id="ActivityDescription" placeholder="ActivityDescription">
+                        </div>
+                        <div class="group">
+                            <label for="DoerComments">Doer Comments :</label>
+                            <input type="text" name="Doer" class="text" id="DoerComments" placeholder="Doer Comments">
+                        </div>
+                        <div class="group">
+                            <label for="Evidence">Evidence :</label>
+                            <input type="file" id="Evidence" name="Evidence" class="file" >
+                        </div>
+                    </div>
+                    <!-- <div class="col" >
+                        <div class="group">
+                            <label for="ActivityDescription" style="margin-top: 10px;">Activity Description</label>
+                            <input type="text" name="Description" class="text" id="ActivityDescription" placeholder="Activity Description">
+                        </div>
+                        <div class="group">
+                            <label for="Frequency">Frequency</label>
+                            <input type="text" name="Frequency" class="text" id="Frequency" placeholder="Frequency">
+                        </div>
+                        <div class="group">
+                            <label for="ApproverRole">Approver Role</label>
+                            <select name="ApproverRole" id="ApproverRole" class="select">
+                                <option value="Approver Role">Approver Role</option>
+                                <option value="None">None</option>
+                            </select>
+                        </div>
+                        <div class="group">
+                            <label for="Reference Document">Reference Document</label>
+                            <input type="file" id="Reference" name="Reference" class="file">
+                        </div>
+                        <div class="group">
+                            <label for="Output Document" >Output Document</label>
+                            <input type="file" id="Output Document" name="Output document" class="file">
+                        </div>
+                        <div class="group">
+                            <label for="" class="Disable" >Disable</label>
+                        <input type="radio" name="status" class="yes1" id="st">
+                        <label for="Yes" class="y1">Yes</label>
+                           
+                        <input type="radio" name="status" class="no1" id="st">
+                        <label for="No" class="n1">No</label>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="btn1">
+                    <button type="submit" class="cancel">Cancel</button>
+                    <button type="submit" class="submit">Submit</button>
+                </div>   
+                </div>
+        </fieldset>
+        <fieldset class="box6"></fieldset>
+    </div>
+    <!-- <script src="3.js"></script> -->
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const toggleSection = document.querySelector(".Form");
+    const toggleButton = document.getElementById("toggleButton");
+
+    toggleButton.addEventListener("click", function() {
+        toggleSection.classList.toggle("open");
+    });
+});
+
+
+
+  $('.masters-btn').click(function(){
+      $('nav ul .masters-show').toggleClass("show2");
+      $('nav ul .third').toggleClass("rotate");
+    });
+    $('.gover-btn').click(function(){
+      $('nav ul .gover-show').toggleClass("show");
+      $('nav ul .first').toggleClass("rotate");
+    });
+
+
+    $('.gover1-btn').click(function(){
+      $('nav ul .gover1-show').toggleClass("show11");
+      $('nav ul .first1').toggleClass("rotate");
+    });
+    $('.gover2-btn').click(function(){
+      $('nav ul .gover2-show').toggleClass("show12");
+      $('nav ul .first2').toggleClass("rotate");
+    });
+    $('.gover3-btn').click(function(){
+      $('nav ul .gover3-show').toggleClass("show13");
+      $('nav ul .first3').toggleClass("rotate");
+    });
+    $('.gover4-btn').click(function(){
+      $('nav ul .gover4-show').toggleClass("show14");
+      $('nav ul .first4').toggleClass("rotate");
+    });
+    $('.gover5-btn').click(function(){
+      $('nav ul .gover5-show').toggleClass("show15");
+      $('nav ul .first5').toggleClass("rotate");
+    });
+    $('.gover6-btn').click(function(){
+      $('nav ul .gover6-show').toggleClass("show16");
+      $('nav ul .first6').toggleClass("rotate");
+    });
+
+
+    $('.confi-btn').click(function(){
+      $('nav ul .confi-show').toggleClass("show3");
+      $('nav ul .second').toggleClass("rotate");
+    });
+    $('.help-btn').click(function(){
+      $('nav ul .help-show').toggleClass("show4");
+      $('nav ul .fifth').toggleClass("rotate");
+    });
+    $('.mod-btn').click(function(){
+      $('nav ul .mod-show').toggleClass("show5");
+      $('nav ul .sixth').toggleClass("rotate");
+    });
+    $('.repo-btn').click(function(){
+      $('nav ul .repo-show').toggleClass("show5");
+      $('nav ul .sixth').toggleClass("rotate");
+    });
+    $('nav ul li').click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+    });
+</script>
+</html>
